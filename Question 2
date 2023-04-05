@@ -1,0 +1,78 @@
+(A).
+
+const printOddNumbers = (arr) => {
+  arr.forEach(num => {
+    if(num % 2 !== 0) {
+      console.log(num);
+    }
+  });
+}
+
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+(B).  
+
+   const convertToTitleCaps = (arr) => {
+  return arr.map(str => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase());
+}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+(c).   
+
+const sumOfNumbers = (arr) => {
+  return arr.reduce((acc, num) => acc + num, 0);
+}
+
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+(D)
+
+const isPrime = (num) => {
+  if(num <= 1) {
+    return false;
+  }
+  for(let i = 2; i <= Math.sqrt(num); i++) {
+    if(num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+const getPrimeNumbers = (arr) => {
+  return arr.filter(num => isPrime(num));
+}
+
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+(E)
+
+
+const isPalindrome = (str) => {
+  const len = str.length;
+  for(let i = 0; i < len / 2; i++) {
+    if(str[i] !== str[len - 1 - i]) {
+      return false;
+    }
+  }
+  return true;
+}
+
+const getPalindromes = (arr) => {
+  return arr.filter(str => isPalindrome(str));
+}
+
+
+
+
+
+
+
