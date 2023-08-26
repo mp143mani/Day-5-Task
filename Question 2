@@ -1,78 +1,50 @@
-(A).
-
-const printOddNumbers = (arr) => {
-  arr.forEach(num => {
-    if(num % 2 !== 0) {
-      console.log(num);
+{
+  "name": "John Doe",
+  "title": "Full Stack Web Developer",
+  "contact": {
+    "email": "johndoe@example.com",
+    "phone": "123-456-7890",
+    "location": "City, Country"
+  },
+  "summary": "Passionate web developer with experience in creating responsive and user-friendly web applications.",
+  "experience": [
+    {
+      "title": "Web Developer",
+      "company": "Tech Solutions Inc.",
+      "location": "City, Country",
+      "dates": "January 2020 - Present",
+      "description": "Developed and maintained web applications using HTML, CSS, and JavaScript. Collaborated with cross-functional teams to deliver high-quality solutions."
+    },
+    {
+      "title": "Junior Developer",
+      "company": "CodeCrafters Ltd.",
+      "location": "City, Country",
+      "dates": "May 2018 - December 2019",
+      "description": "Assisted in building and testing website components. Gained experience in version control and agile development methodologies."
     }
-  });
-}
-
-
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-(B).  
-
-   const convertToTitleCaps = (arr) => {
-  return arr.map(str => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase());
-}
-
-//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-(c).   
-
-const sumOfNumbers = (arr) => {
-  return arr.reduce((acc, num) => acc + num, 0);
-}
-
-
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-(D)
-
-const isPrime = (num) => {
-  if(num <= 1) {
-    return false;
-  }
-  for(let i = 2; i <= Math.sqrt(num); i++) {
-    if(num % i === 0) {
-      return false;
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "school": "University of Techville",
+      "location": "City, Country",
+      "dates": "2014 - 2018"
     }
+  ],
+  "skills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Node.js",
+    "Git",
+    "Responsive Design",
+    "Problem Solving"
+  ],
+  "languages": ["English", "Spanish"],
+  "links": {
+    "portfolio": "https://www.johndoeportfolio.com",
+    "linkedin": "https://www.linkedin.com/in/johndoe",
+    "github": "https://github.com/johndoe"
   }
-  return true;
 }
-
-const getPrimeNumbers = (arr) => {
-  return arr.filter(num => isPrime(num));
-}
-
-
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-(E)
-
-
-const isPalindrome = (str) => {
-  const len = str.length;
-  for(let i = 0; i < len / 2; i++) {
-    if(str[i] !== str[len - 1 - i]) {
-      return false;
-    }
-  }
-  return true;
-}
-
-const getPalindromes = (arr) => {
-  return arr.filter(str => isPalindrome(str));
-}
-
-
-
-
-
-
-
